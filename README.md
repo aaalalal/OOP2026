@@ -13,4 +13,4 @@ public class Homework1{
 }
 
 ```
-![Alt homework11](./images/homework1.jpg)
+![Alt homework11](file:///C:/Users/U209-25/Downloads/homework1.jpg)
