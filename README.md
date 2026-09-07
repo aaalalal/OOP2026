@@ -1,4 +1,5 @@
 # OOP2026
+```java
 public class Homework1{
   public static void main(String []args){
     int i, j;
