@@ -1,4 +1,5 @@
 # OOP2026
+'''java
 public class Main {
     public static void main(String[] args) {
 
