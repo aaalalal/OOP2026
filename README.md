@@ -121,7 +121,6 @@ int main(void)
 }
 ```
 
-
 #include <stdio.h>
 #include <math.h>
 
@@ -136,6 +135,13 @@ int main(void)
         pi += term;
     }
 
+    pi *= sqrt(12.0);
+
+    printf("pi = %.15f\n", pi);
+
+    return 0;
+}
+ 
     pi *= sqrt(12.0);
 
     printf("pi = %.15f\n", pi);
