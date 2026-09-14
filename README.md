@@ -53,3 +53,31 @@ int main(void)
 ```
 
 
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    int a = 1, b = 1, c;
+    double ratio;
+
+    for (int i = 1; i <= 20; i++)
+    {
+        c = a + b;
+
+        if (i >= 2)
+        {
+            ratio = (double)c / b;
+            printf("%d/%d = %.3f\n", c, b, ratio);
+        }
+
+        a = b;
+        b = c;
+    }
+
+    return 0;
+}
+```
+
+
+
