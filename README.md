@@ -122,26 +122,16 @@ int main(void)
 ```
 
 #include <stdio.h>
-#include <math.h>
 
 int main(void)
 {
     double pi = 0.0;
-    double term;
 
-    for (int k = 0; k < 20; k++)
+    for (int k = 0; k < 1000; k++)
     {
-        term = pow(-1.0 / 3.0, k) / (2 * k + 1);
-        pi += term;
+        pi += pow(-1.0 / 3.0, k) / (2 * k + 1);
     }
 
-    pi *= sqrt(12.0);
-
-    printf("pi = %.15f\n", pi);
-
-    return 0;
-}
- 
     pi *= sqrt(12.0);
 
     printf("pi = %.15f\n", pi);
