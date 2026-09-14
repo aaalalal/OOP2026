@@ -144,3 +144,40 @@ int main(void)
 
     return 0;
 }
+```
+
+```c
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(void)
+{
+    int data[20];
+
+    srand(time(NULL));
+
+    for (int i = 0; i < 20; i++)
+        data[i] = rand() % 100;
+
+    for (int i = 0; i < 20; i++)
+    {
+        int min = i;
+
+        for (int j = i + 1; j < 20; j++)
+        {
+            if (data[j] < data[min])
+                min = j;
+        }
+
+        int temp = data[i];
+        data[i] = data[min];
+        data[min] = temp;
+    }
+
+    for (int i = 0; i < 20; i++)
+        printf("%d ", data[i]);
+
+    return 0;
+}
