@@ -181,3 +181,36 @@ int main(void)
 
     return 0;
 }
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(void)
+{
+    int score[3][4];
+    int sum;
+
+    srand(time(NULL));
+
+    for (int i = 0; i < 3; i++)
+    {
+        sum = 0;
+
+        for (int j = 0; j < 4; j++)
+        {
+            score[i][j] = rand() % 101;
+            sum += score[i][j];
+        }
+
+        printf("%d %d %d %d %d\n",
+               i + 1,
+               score[i][0],
+               score[i][1],
+               score[i][2],
+               score[i][3]);
+
+        printf("sum = %d\n", sum);
+    }
+
+    return 0;
+}
