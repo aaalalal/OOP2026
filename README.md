@@ -119,22 +119,27 @@ int main(void)
 
     return 0;
 }
+
 ```
 
 #include <stdio.h>
 
 int main(void)
 {
-    double pi = 0.0;
+    int n = 7;
 
-    for (int k = 0; k < 1000; k++)
+    for (int i = 0; i < n; i++)
     {
-        pi += pow(-1.0 / 3.0, k) / (2 * k + 1);
+        int value = 1;
+
+        for (int j = 0; j <= i; j++)
+        {
+            printf("%d ", value);
+            value = value * (i - j) / (j + 1);
+        }
+
+        printf("\n");
     }
-
-    pi *= sqrt(12.0);
-
-    printf("pi = %.15f\n", pi);
 
     return 0;
 }
