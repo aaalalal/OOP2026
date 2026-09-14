@@ -75,6 +75,26 @@ int main(void)
         b = c;
     }
 
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    for (int i = 1; i <= 9; i++)
+    {
+        for (int j = 1; j <= 9; j++)
+        {
+            printf("%d*%d=%d ", j, i, j * i);
+        }
+
+        printf("\n");
+    }
+
+    return 0;
+}
+```
+
     return 0;
 }
 ```
