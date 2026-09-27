@@ -338,4 +338,55 @@ public class Mean {
     }
 }
 ```
+## 13. 계산기 프로그램
+
+```java
+import java.util.Scanner;
+
+public class miniCalculator {
+
+    public static void main(String[] args) {
+
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+
+            String inputString = scanner.nextLine();
+
+            if (inputString.equals("exit"))
+                break;
+
+            String[] arrOfStr = inputString.split(" ");
+
+            double result = Double.parseDouble(arrOfStr[0]);
+
+            for (int i = 1; i < arrOfStr.length; i += 2) {
+
+                String operator = arrOfStr[i];
+                double number = Double.parseDouble(arrOfStr[i + 1]);
+
+                if (operator.equals("+")) {
+                    result += number;
+                }
+                else if (operator.equals("-")) {
+                    result -= number;
+                }
+                else if (operator.equals("*")) {
+                    result *= number;
+                }
+                else if (operator.equals("#")) {
+                    result *= number;
+                }
+                else if (operator.equals("/")) {
+                    result /= number;
+                }
+            }
+
+            System.out.println(result);
+        }
+
+        scanner.close();
+    }
+}
+```
 ![Homework 1](homework1.jpg)
