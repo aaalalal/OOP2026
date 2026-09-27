@@ -183,7 +183,7 @@ int main(void)
 }
 ```
 
-## Homework 1
+
 
 ```c
 #include <stdio.h>
