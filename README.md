@@ -183,6 +183,8 @@ int main(void)
 }
 ```
 
+## Homework 1
+
 ```c
 #include <stdio.h>
 #include <stdlib.h>
@@ -217,5 +219,3 @@ int main(void)
 
     return 0;
 }
-
-![Homework 1](homework1.jpg)
