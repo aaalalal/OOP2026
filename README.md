@@ -220,7 +220,7 @@ int main(void)
     return 0;
 }
 ```
-## 9. 도수분포표 만들기
+
 
 ```java
 public class Histogram {
@@ -266,6 +266,75 @@ public class Histogram {
 
             System.out.println();
         }
+    }
+}
+```
+
+
+```java
+import java.util.Arrays;
+
+public class Mean {
+
+    public static void main(String[] args) {
+
+        int array_count;
+
+        if (args.length != 1)
+            return;
+
+        array_count = Integer.parseInt(args[0]);
+
+        int[] arr = new int[array_count];
+
+        for (int i = 0; i < array_count; i++) {
+            arr[i] = (int)(Math.random() * 100) + 1;
+        }
+
+        for (int i = 0; i < array_count; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        System.out.println();
+
+        double sum = 0;
+
+        for (int i = 0; i < array_count; i++) {
+            sum += arr[i];
+        }
+
+        double arithmetic = sum / array_count;
+
+        double product = 1;
+
+        for (int i = 0; i < array_count; i++) {
+            product *= arr[i];
+        }
+
+        double geometric = Math.pow(product, 1.0 / array_count);
+
+        double reciprocalSum = 0;
+
+        for (int i = 0; i < array_count; i++) {
+            reciprocalSum += 1.0 / arr[i];
+        }
+
+        double harmonic = array_count / reciprocalSum;
+
+        Arrays.sort(arr);
+
+        double median;
+
+        if (array_count % 2 == 1) {
+            median = arr[array_count / 2];
+        } else {
+            median = (arr[array_count / 2 - 1] + arr[array_count / 2]) / 2.0;
+        }
+
+        System.out.printf("arithmetic mean = %f\n", arithmetic);
+        System.out.printf("geometric mean = %f\n", geometric);
+        System.out.printf("harmonic mean = %f\n", harmonic);
+        System.out.printf("median = %f\n", median);
     }
 }
 ```
