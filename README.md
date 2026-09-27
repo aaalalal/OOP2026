@@ -219,5 +219,5 @@ int main(void)
 
     return 0;
 }
-'''
+```
 ![Homework 1](homework1.jpg)
