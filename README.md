@@ -1,4 +1,4 @@
-## 1.10x10 텍스트 직각삼각형 네가지 프로그램 작성
+## 1. 10x10 텍스트 직각삼각형 네가지 프로그램 작성
 
 ```c
 #include <stdio.h>
@@ -31,6 +31,7 @@ int main(void)
     return 0;
 }
 ```
+## 2. 피보나치수열 20번째 까지 
 
 
 
@@ -54,6 +55,7 @@ int main(void)
 }
 ```
 
+## 3. 황금비율계산 20번째 까지 
 
 ```c
 #include <stdio.h>
@@ -81,6 +83,7 @@ int main(void)
     return 0;
 }
 ```
+## 4. 구구샘표 만들기 
 
 ```c
 #include <stdio.h>
@@ -100,7 +103,7 @@ int main(void)
     return 0;
 }
 ```
-
+## 5. 원주율 계
 ```c
 #include <stdio.h>
 
@@ -123,7 +126,7 @@ int main(void)
 }
 
 ```
-
+## 6. 이항정리 계수구하기
 ```c
 #include <stdio.h>
 
@@ -147,6 +150,7 @@ int main(void)
     return 0;
 }
 ```
+## 7. 소팅(sorting)알고리즘 - selection sorting
 
 ```c
 
@@ -185,7 +189,7 @@ int main(void)
 }
 ```
 
-
+## 8. 국영수과학성적 
 
 ```c
 #include <stdio.h>
@@ -222,6 +226,7 @@ int main(void)
     return 0;
 }
 ```
+## 10. 도수분포표만들기 
 
 
 ```java
@@ -271,6 +276,7 @@ public class Histogram {
     }
 }
 ```
+## 11. 산술평균(arithmetic), 기하평균(geometric), 조화평균(harmonic), 중앙값(median) 계산하기
 
 
 ```java
