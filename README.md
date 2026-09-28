@@ -31,6 +31,8 @@ int main(void)
     return 0;
 }
 ```
+![실행 결과](Homework/1.jpg)
+
 ## 2. 피보나치수열 20번째 까지 
 
 
@@ -397,4 +399,4 @@ public class miniCalculator {
     }
 }
 ```
-![Homework 1](homework1.jpg)
+
