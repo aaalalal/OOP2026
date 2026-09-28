@@ -56,7 +56,7 @@ int main(void)
     return 0;
 }
 ```
-![실행 결과](Homework/2.jpg)
+![실행 결과](Homework/2.png)
 
 ## 3. 황금비율계산 20번째 까지 
 
