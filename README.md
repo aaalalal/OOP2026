@@ -86,6 +86,8 @@ int main(void)
     return 0;
 }
 ```
+![실행 결과](Homework/3.png)
+
 ## 4. 구구샘표 만들기 
 
 ```c
@@ -106,6 +108,8 @@ int main(void)
     return 0;
 }
 ```
+![실행 결과](Homework/4.png)
+
 ## 5. 원주율 계
 ```c
 #include <stdio.h>
@@ -129,6 +133,8 @@ int main(void)
 }
 
 ```
+![실행 결과](Homework/5.png)
+
 ## 6. 이항정리 계수구하기
 ```c
 #include <stdio.h>
@@ -153,6 +159,8 @@ int main(void)
     return 0;
 }
 ```
+![실행 결과](Homework/6.png)
+
 ## 7. 소팅(sorting)알고리즘 - selection sorting
 
 ```c
@@ -191,6 +199,8 @@ int main(void)
     return 0;
 }
 ```
+![실행 결과](Homework/7.png)
+
 
 ## 8. 국영수과학성적 
 
@@ -229,6 +239,8 @@ int main(void)
     return 0;
 }
 ```
+![실행 결과](Homework/8.png)
+
 ## 10. 도수분포표만들기 
 
 
@@ -279,6 +291,8 @@ public class Histogram {
     }
 }
 ```
+![실행 결과](Homework/10.png)
+
 ## 11. 산술평균(arithmetic), 기하평균(geometric), 조화평균(harmonic), 중앙값(median) 계산하기
 
 
@@ -349,6 +363,8 @@ public class Mean {
     }
 }
 ```
+![실행 결과](Homework/11.png)
+
 ## 13. 계산기 프로그램
 
 ```java
@@ -400,4 +416,9 @@ public class miniCalculator {
     }
 }
 ```
+![실행 결과](Homework/13.png)
+
+![Homework_image](Homework/image.jpg)
+
+
 
