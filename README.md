@@ -419,7 +419,132 @@ public class miniCalculator {
 ```
 ![실행 결과](Homework/13.png)
 
-![Homework_image](Homework/image.jpg)
+## 14. 도수분표표와 산술평균, 기하평균, 조화평균, 중앙값을 구하는 클래스를 구현하시오
+```java
 
+
+public class Main {
+    int num[];
+
+    Main(int num[]) {
+        this.num = num;
+    }
+
+    double getTotal() {
+        double sum = 0;
+        for (int i = 0; i < num.length; i++)
+            sum += num[i];
+        return sum;
+    }
+
+    double getArithmaticMean() {
+        return getTotal() / num.length;
+    }
+
+    double getHarmonicMean() {
+        double sum = 0;
+        for (int i = 0; i < num.length; i++) {
+            if (num[i] == 0)
+                return 0;
+            sum += 1.0 / num[i];
+        }
+        return num.length / sum;
+    }
+
+    double getGeometricMean() {
+        double product = 1.0;
+        for (int i = 0; i < num.length; i++) {
+            if (num[i] == 0)
+                return 0;
+            product *= num[i];
+        }
+        return Math.pow(product, 1.0 / num.length);
+    }
+
+    int getMedian() {
+        sorting();
+        int mid = num.length / 2;
+
+        if (num.length % 2 == 1)
+            return num[mid];
+        else
+            return (num[mid - 1] + num[mid]) / 2;
+    }
+
+    void sorting() {
+        for (int i = 0; i < num.length - 1; i++) {
+            for (int j = i + 1; j < num.length; j++) {
+                if (num[i] > num[j]) {
+                    int temp = num[i];
+                    num[i] = num[j];
+                    num[j] = temp;
+                }
+            }
+        }
+    }
+
+    void drawHistogram(int start, int end, int binCount, int scale) {
+        int binSize = (end - start) / binCount;
+        int count[] = new int[binCount];
+
+        for (int i = 0; i < num.length; i++) {
+            if (num[i] >= start && num[i] < end) {
+                int index = (num[i] - start) / binSize;
+                count[index]++;
+            }
+        }
+
+        for (int i = 0; i < binCount; i++) {
+            int low = start + i * binSize;
+            int high = low + binSize - 1;
+
+            System.out.printf("%2d~%2d : ", low, high);
+
+            for (int j = 0; j < count[i] / scale; j++)
+                System.out.print("#");
+
+            System.out.println();
+        }
+    }
+
+    void display() {
+        System.out.printf("%3d :", num.length);
+        for (int i = 0; i < num.length; i++)
+            System.out.printf("%3d ", num[i]);
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+        int size = 100;
+        int data[] = new int[size];
+
+        for (int i = 0; i < size; i++)
+            data[i] = (int)(Math.random() * 100);
+
+        Main obj = new Main(data);
+
+        obj.display();
+
+        System.out.printf("Arithmetic Mean : %5.2f\n",
+                          obj.getArithmaticMean());
+        System.out.printf("Geometric Mean : %5.2f\n",
+                          obj.getGeometricMean());
+        System.out.printf("Harmonic Mean : %5.2f\n",
+                          obj.getHarmonicMean());
+        System.out.printf("Median : %d\n", obj.getMedian());
+
+        obj.drawHistogram(0, 100, 10, 1);
+    }
+}
+
+```
+![실행 결과](Homework/14.png)
+![실행 결과](Homework/15.png)
+![실행 결과](Homework/16.png)
+![실행 결과](Homework/17.png)
+![실행 결과](Homework/18.png)
+
+
+![Homework_image](Homework/image.jpg)
 
 
