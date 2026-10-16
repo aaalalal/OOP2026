@@ -543,8 +543,6 @@ public class Main {
 ![실행 결과](Homework/16.png)
 ![실행 결과](Homework/17.png)
 ![실행 결과](Homework/18.png)
-```
-## HOMEWORK
 
 ![Homework_image](Homework/image.jpg)
 
